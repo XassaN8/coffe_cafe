@@ -22,7 +22,6 @@
         max-width: 1356px;
        margin: 0px auto;
        padding: 20px;
-       border: 1px solid white;
        display: flex;
        justify-content: space-between;
        align-items: center;
@@ -56,4 +55,84 @@
             border-radius: 24px;
         }
      }
+}
+
+.Parent1{
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+    &-h1{
+      color: #fff;  
+      font-family: Playfair Display ;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    &-h2{
+        color: #fff;
+        font-family: Clicker Script;
+        font-size: 220px;
+        font-weight: 400;
+    }
+
+    &-h3{
+        width: 550px;
+      color: #fff;  
+      font-family: Playfair Display;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 34px;
+    }
+    &-Button{
+        width: 134px;
+        height: 48px;
+        background-color: #1E1E1E ;
+        font-family: Playfair Display ;
+       @include StyleText(16px, 700, normal);
+       background-color: $background;
+       border: none;
+       border-radius: 24px ;
+    }
+}
+
+.Parent2{
+  display: flex;
+    &-section1{
+     margin: 150px 688px 3893px 93px;
+      
+      &-h1{
+        
+        margin: 29px;
+      color:#603809 ;
+      font-family: Playfair Display ;
+      font-size: 54px;
+      font-weight: 700;
+      }
+     &-h2{
+        width: 550px ;
+        color: #707070 ;
+        font-family: Playfair Displa ;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+     }
+      &-Button{
+        margin-top: 49px;
+        width: 134px;
+        height: 48px;
+        background-color: #1E1E1E ;
+        font-family: Playfair Display ;
+       @include StyleText(16px, 700, normal);
+       background-color: $background;
+       border: none;
+       border-radius: 24px ;
+       
+      }
+      &-img{
+        grid-template-columns: 1fr 1fr
+      }
+    
+    }
+
+
 }
